@@ -1,0 +1,134 @@
+.containerQuoteFinal {
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 86%;
+    padding: 100px 0;
+    .tituloFormFinalQuote {
+        color: $color-acento;
+        font-weight: 500;
+        font-size: 60px;
+        margin-bottom: 2%;
+    }
+    .pFormQuoteFinal {
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 2%;
+    }
+    .h5FormQuoteFinal {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 3%;
+        color: $color-acento;
+    }
+    .containerQuoteButton {
+        display: flex;
+        justify-content: end;
+    }
+    .quoteButton {
+        height: 40px;
+        width: 150px;
+        font-weight: 400;
+        margin: 2% 0;
+    }
+    .quoteTextarea {
+        width: 100%;
+        padding: 15px;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 45px;
+        margin-top: 1%;
+    }
+    .containerRadioQuoteFinal {
+        margin-top: -15px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+
+    .formDatosPersonales {
+        width: 100%;
+        margin: -1% 0 3% 0;
+        .containerInputDatosPersonales {
+            display: flex;
+            gap: 2%;
+            position: relative;
+            @include max-screen(850) {
+                flex-direction: column;
+            }
+            .containerInput {
+                position: relative;
+                width: 100%;
+                margin-bottom: 1rem;
+                .InputDatosPersonales {
+                    margin: 2% 0;
+                    width: 100%;
+                    padding: 8px;
+                    font-size: 16px;
+                    @include max-screen(850) {
+                        width: 100%;
+                    }
+                }
+                .errorContactForm {
+                    position: absolute;
+                    bottom: -10px;
+                    left: 0;
+                    color: rgb(245, 96, 11);
+                }
+
+                
+            }
+        }
+    }
+
+    //Form Housing
+    .tituloFormHousing {
+        font-weight: 500;
+        font-size: 60px;
+    }
+    .h5FormHousing {
+        font-size: 28px;
+        font-weight: 500;
+        margin: 10px 0 4% 3%;
+    }
+    .h4FormHousing {
+        font-size: 40px;
+        font-weight: 400;
+        margin-bottom: 3%;
+        margin-top: 12%;
+    }
+    .containerFormButtonsHousing {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 9%;
+        background-color: #fff;
+    }
+    .buttonFormHousing {
+        height: 40px;
+        width: 130px;
+        text-align: center;
+        margin: 2% 0;
+        border: 1px solid $color-acento;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 180%;
+        &:hover {
+            color: $color-acento;
+            background: #cbdbbf;
+        }
+    }
+
+    //Form housing 2
+    .containerRadioFormHousing {
+        display: flex;
+        justify-content: space-around;
+    }
+    .buttonsRadioFormHousing {
+        width: 50%;
+    }
+    .pFormHousing2 {
+        margin-bottom: -1px;
+       font-weight: 700;    
+    }
+}

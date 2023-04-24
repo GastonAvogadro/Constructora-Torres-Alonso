@@ -1,0 +1,79 @@
+.aboutContainer {
+   display: flex;
+   justify-content: center;
+   margin-top: 2%;
+   .p2{
+      display: none;
+      @include max-screen(1250) {
+         display: block;
+         font-size: 2rem;
+         margin-top: 2rem;
+         width: 100%;
+         margin-left: 5%;
+       }
+       @include max-screen(768) {
+         font-size: 1.7rem;
+      }
+   }
+   @include max-screen(1250) {
+      display: block;
+      width: 90%;
+     
+   }
+
+   .aboutText {
+      width: 25%;
+      margin-right: 7rem;
+
+      @include max-screen(1500) {
+         width: 33%;
+      }
+
+      @include max-screen(1250) {
+         width: 93%;
+         margin-left: 5%;
+      }
+
+      .h2 {
+         font-size: 4.3rem;
+         margin-bottom: 1rem;
+         @include max-screen(768) {
+            font-size: 3.7rem;
+         }
+      }
+    
+      .p {
+         font-size: 2rem;
+         @include max-screen(1250) {
+           display: none;
+         }
+         @include max-screen(768) {
+            font-size: 1.7rem;
+         }
+      }
+   }
+
+   .aboutContainerImage {
+      display: flex;
+      gap: 2rem;
+
+      @include max-screen(1500) {
+        justify-content: end;
+        gap: 1rem;
+      }
+     
+
+      .aboutImage {
+         margin-top: 5.7rem;
+         object-fit: cover;
+
+         @include max-screen(1250) {
+            width: 35%;
+            margin-top: 0rem;
+           
+         }
+      }
+   }
+
+
+}

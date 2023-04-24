@@ -1,0 +1,247 @@
+.containers {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 20%;
+
+    @include max-screen(950) {
+        margin-bottom: 10%;
+    }
+
+    @include max-screen(380) {
+        margin-bottom: -10%;
+    }
+
+    .container {
+        position: relative;
+        height: 700px;
+        width: 58%;
+
+        @include max-screen(1700) {
+            width: 62%;
+        }
+
+        @include max-screen(1500) {
+            width: 68%;
+        }
+
+        @include max-screen(1300) {
+            width: 80%;
+        }
+
+        @include max-screen(1150) {
+            width: 100%;
+        }
+
+        .h2Contacto {
+            font-size: 4.3rem;
+            margin-left: -5%;
+            margin-bottom: 4%;
+
+            @include max-screen(1150) {
+                margin-left: 5%;
+                margin-top: 3%;
+            }
+
+            @include max-screen(600) {
+                font-size: 3.7rem;
+                margin-top: 9%;
+            }
+        }
+
+        .cuadro1 {
+            position: absolute;
+            margin-left: 5%;
+            width: 55%;
+
+            @include max-screen(1300) {
+                margin-left: 10%;
+            }
+
+            @include max-screen(1150) {
+                width: 50%;
+                margin-left: 15%;
+            }
+
+            @include max-screen(950) {
+                margin-left: 15%;
+            }
+
+            @include max-screen(768) {
+                width: 80%;
+                height: 92%;
+                margin-left: 5%;
+            }
+
+            @include max-screen(500) {
+                width: 87%;
+                height: 80%;
+                margin-left: 1%;
+            }
+
+            @include max-screen(380) {
+                height: 72%;
+                margin-left: 1%;
+            }
+
+            .img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .cuadro2 {
+            position: absolute;
+            top: 43%;
+            left: 40%;
+            width: 53%;
+            height: 100%;
+            background-color: #335062;
+
+            @include max-screen(1700) {
+                top: 35%;
+            }
+
+            @include max-screen(1300) {
+                left: 30%;
+                height: 95%;
+            }
+
+            @include max-screen(1150) {
+                left: 27%;
+                top: 27%;
+            }
+
+            @include max-screen(950) {
+                width: 50%;
+                height: 80%;
+            }
+
+            @include max-screen(768) {
+                width: 80%;
+                height: 85%;
+                left: 17%;
+                top: 25%;
+            }
+
+            @include max-screen(500) {
+                width: 85%;
+                left: 10%;
+                top: 20%;
+            }
+
+            @include max-screen(380) {
+                width: 90%;
+                height: 72%;
+                left: 7%;
+                top: 20%;
+            }
+
+            .containerForm {
+                width: 100%;
+                padding: 6% 0 0;
+                margin: auto;
+            }
+        }
+
+        .form {
+            text-align: center;
+            margin-top: 10%;
+
+            @include max-screen(950) {
+                margin-top: 4%;
+            }
+
+            input,
+            textarea {
+                background: #f2f2f2;
+                width: 80%;
+                border: 0;
+                padding: 10px;
+                font-size: 16px;
+
+                @include max-screen(380) {
+                    padding: 7px;
+                }
+            }
+
+            textarea {
+                margin: 20px 0 0px;
+
+                @include max-screen(950) {
+                    margin: 0px;
+                }
+
+                @include max-screen(600) {
+                    margin: 20px 0 0px;
+                }
+
+                @include max-screen(380) {
+                    margin: 10px 0 0px;
+                }
+            }
+
+            .containerButton {
+                display: flex;
+                justify-content: center;
+
+                .buttonContact {
+                    width: 130px;
+                    height: 50px;
+                    font-weight: 400;
+                    margin-top: 40px;
+
+                    @include max-screen(1300) {
+                        margin-top: 10px;
+                    }
+
+                    @include max-screen(950) {
+                        margin-top: 0px;
+                    }
+
+                    @include max-screen(600) {
+                        margin-top: 10px;
+                    }
+
+                    @include max-screen(380) {
+                        margin-top: 0px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.errorContact {
+    display: block;
+    text-align: justify;
+    margin: 1% 0% 3% 10%;
+    color: rgb(245, 96, 11);
+}
+
+.small {
+    color: $color-principal;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.cajatext {
+    position: relative;
+}
+.iconContac {
+    position: absolute;
+    right: 11%;
+    top: 5px;
+    font-size: 20px;
+    color: rgb(243, 247, 247);
+}
+
+.check2 {
+    color: rgb(238, 80, 7);
+}
+.check {
+    color: rgb(54, 134, 67);
+}

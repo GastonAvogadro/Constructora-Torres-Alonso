@@ -1,0 +1,83 @@
+.confirmationContainer {
+    padding-top: 72px;
+    min-height: 90vh;
+    .confirmationText-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space;
+        align-items: flex-start;
+        padding-left: 7%;
+        margin-top: 6%;
+        gap: 5rem;
+        @include max-screen(850) {
+            padding-left: 3.5%;
+            gap: 4rem;
+        }
+        h3 {
+            font-weight: 700;
+            font-size: 6rem;
+            @include max-screen(850) {
+                font-size: 4rem;
+            }
+            @include max-screen(570) {
+                font-size: 3rem;
+            }
+            @include max-screen(415) {
+                font-size: 2rem;
+            }
+        }
+        .confirmationText {
+            align-items: flex-start;
+            gap: 0.5rem;
+            p:first-child {
+                font-weight: 500;
+                font-size: 4rem;
+                @include max-screen(850) {
+                    font-size: 3rem;
+                }
+                @include max-screen(570) {
+                    font-size: 2rem;
+                }
+                @include max-screen(415) {
+                    font-size: 1.5rem;
+                }
+            }
+            p:last-child {
+                font-size: 2.4rem;
+                @include max-screen(850) {
+                    font-size: 2.2rem;
+                }
+                @include max-screen(570) {
+                    font-size: 1.6rem;
+                }
+                @include max-screen(415) {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .confirmationButtons {
+            gap: 6rem;
+            width: 100%;
+            @include max-screen(850) {
+                margin-top: 5%;
+            }
+            @include max-screen(570) {
+                margin-top: 11%;
+            }
+            button:last-child {
+                @extend .button-primary;
+                color: $color-acento;
+                background-color: transparent;
+                border: 1px solid $color-acento;
+                clip-path: none;
+            }
+            @include max-screen(570) {
+                button,
+                button:last-child {
+                    font-size: 1.5rem;
+                    padding: 0px 25px;
+                }
+            }
+        }
+    }
+}

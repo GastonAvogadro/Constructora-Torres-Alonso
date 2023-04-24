@@ -1,0 +1,69 @@
+.porfolioHomeContainer {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0 5% 2% 5%;
+    display: flex;
+    @include max-screen(950) {
+        display: block;
+        padding: 2%;
+    }
+}
+
+.containerImagLeft {
+    width: 50%;
+    @include max-screen(950) {
+        width: 100%;
+    }
+}
+
+.containerImagesRight {
+    width: 50%;
+    @include max-screen(950) {
+        width: 100%;
+    }
+}
+
+.imagePorfolio {
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    object-fit: cover;
+}
+
+.porfolioHomeButton {
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    @include max-screen(600) {
+        justify-content: center;
+        margin-bottom: 12%;
+    }
+}
+
+.h2PorfolioHome {
+    font-size: 4.3rem;
+    margin-bottom: 2rem;
+    margin-left: 5%;
+    margin-top: 3%;
+    @include max-screen(600) {
+        font-size: 3.7rem;
+    }
+}
+.pPorfolioHome {
+    font-size: 2.5rem;
+    margin-left: 9%;
+    @include max-screen(600) {
+        font-size: 2rem;
+    }
+}
+
+.porfolioHomeButton {
+    .button-primary {
+        width: 250px;
+        @include max-screen(600) {
+            width: 170px;
+        }
+    }
+}

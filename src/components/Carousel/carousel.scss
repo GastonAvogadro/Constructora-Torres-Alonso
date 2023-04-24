@@ -1,0 +1,27 @@
+.carouselContainer {
+    margin-bottom: 4%;
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            max-width: 100%;
+
+        }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: $color-principal;
+        top: 46%;
+    }
+    .swiper-pagination {
+        position: relative;
+        bottom: -1%;
+        .swiper-pagination-bullet {
+            background-color: #818a7b;
+            background-color: #586450;
+        }
+        .swiper-pagination-bullet-active {
+        }
+    }
+}

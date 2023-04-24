@@ -1,0 +1,27 @@
+.burgerContainer {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 3%;
+    margin: auto;
+    color: #ffffff;
+    @include min-screen(850) {
+        display: none;
+    }
+}
+
+.burguerShort {
+    .hamburger-react {
+        div:nth-child(2) {
+            width: 21px !important;
+        }
+        div:nth-child(3) {
+            width: 12px !important;
+        }
+    }
+}
+
+.burguerBlue {
+    color: $color-principal;
+}

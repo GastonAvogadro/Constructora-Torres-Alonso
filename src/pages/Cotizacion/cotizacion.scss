@@ -1,0 +1,95 @@
+.quotationContainer {
+    .quotationHeader {
+        height: 100vh;
+        .darkBg {
+            width: 100%;
+            height: 100%;
+            background-color: #0f0f0f9c;
+            position: absolute;
+            z-index: 1;
+        }
+        .quotationBg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .quotationHeader-content {
+            z-index: 1;
+            height: 65%;
+            width: 86%;
+            margin-top: 8%;
+            gap: 3rem;
+            h3 {
+                color: #ffffff;
+                font-weight: 700;
+                font-size: 6rem;
+                @include max-screen(850) {
+                    font-size: 4.5rem;
+                }
+                @include max-screen(415) {
+                    font-size: 2.8rem;
+                }
+            }
+            p {
+                color: #ffffff;
+                width: 70%;
+                font-size: 2.4rem;
+                line-height: 3.1rem;
+                @include max-screen(850) {
+                    font-size: 2.1rem;
+                }
+                @include max-screen(415) {
+                    font-size: 1.6rem;
+                }
+                @include max-screen(510) {
+                    width: 100%;
+                }
+            }
+            .button-primary {
+                width: 179px;
+                margin-top: 3%;
+            }
+            .socialMedia {
+                align-self: flex-end;
+                margin-top: auto;
+                @include max-screen(850) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .quotationProjects {
+        padding-top: 4%;
+        padding-bottom: 7%;
+        h3 {
+            margin-left: 7%;
+            font-size: 4rem;
+            font-weight: 500;
+        }
+        .projectsContainer {
+            margin-top: 4%;
+            margin-left: 13%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 4rem;
+            .project {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 3%;
+                .button-primary {
+                    width: 208px;
+                }
+                p {
+                    letter-spacing: 0.5px;
+                    font-weight: 400;
+                    font-size: 2rem;
+                    line-height: 3.2rem;
+                    width: 65%;
+                }
+            }
+        }
+    }
+}

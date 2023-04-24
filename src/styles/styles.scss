@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import './variables';
+@import './generalStyle';
+
+// COMPONENTS
+
+@import '../components/Footer/footer';
+@import '../components/ImagList/imagList';
+@import '../components/NavBar/navBar';
+@import '../components/BannerHome/bannerHome';
+@import '../components/SocialMedia/socialMedia';
+@import '../components/Carousel/carousel';
+@import '../components/SobreMiComponent/SobreMiComponent.scss';
+@import '../components/ServicesCards/servicesCards.scss';
+@import '../components/BurguerMenu/burguerMenu.scss';
+@import '../components/ServiceHome/serviceHome';
+@import '../components/PorfolioHome/porfolioHome';
+@import '../components/CotizacionHome/cotizacionHome';
+@import '../components/ContactComponent/contactComponent';
+@import '../components/quotations/quotations';
+@import '../components/quotations/finalQuoteForm';
+
+// VIEWS
+@import '../pages/Home/home';
+@import '../pages/SobreMi/sobreMi';
+@import '../pages/Servicios/servicios';
+@import '../pages/Portfolio/portfolio';
+@import '../pages/Cotizacion/cotizacion';
+@import '../pages/Contacto/contacto';
+@import '../pages/Confirmacion/confirmacion';
