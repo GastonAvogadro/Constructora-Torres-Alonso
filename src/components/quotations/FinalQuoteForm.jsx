@@ -17,12 +17,11 @@ export const FinalQuoteForm = () => {
     const onSubmit = (data) => {
         const handleTemplate = () => {
             const check = userData.hasOwnProperty('vivienda');
-            console.log(check);
-            return check ? 'template_5ctl80o' : 'template_jdmh0bs';
+            return check ? 'template_sz0vdep' : 'template_e6hh2wl';
         };
 
         emailjs
-            .send('service_mypv64x', handleTemplate(), { ...userData, ...data }, 'JRJWoI7ewdWC-PqzG')
+            .send('service_fpjz9xq', handleTemplate(), { ...userData, ...data }, '9KBy9yFnjJDOadCin')
             .then(
                 (result) => {
                     console.log(result.text);

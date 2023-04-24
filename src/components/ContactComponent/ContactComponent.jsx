@@ -13,7 +13,7 @@ export const ContactComponent = () => {
     } = useForm();
 
     const onSubmit = async (data) => {
-        emailjs.send('service_mypv64x', 'template_jdmh0bs', data, 'JRJWoI7ewdWC-PqzG').then(
+        emailjs.send('service_fpjz9xq', 'template_e6hh2wl', data, '9KBy9yFnjJDOadCin').then(
             (result) => {
                 console.log(result.text);
                 navigate('/confirmacion');
