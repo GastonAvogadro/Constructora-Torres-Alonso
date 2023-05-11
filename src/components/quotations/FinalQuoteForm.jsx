@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { UseApiContext } from '../../context/ApiContext';
 import { useForm } from 'react-hook-form';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import { AnimatedPage } from '../AnimatedPage/AnimatedPage';
 
@@ -37,7 +37,7 @@ export const FinalQuoteForm = () => {
     return (
         <AnimatedPage setClass={'containerQuoteFinal'}>
             <h2 className="tituloFormFinalQuote">¡Todo listo!</h2>
-            <p className="pFormQuoteFinal">
+            <p className="pFormQuoteFinal ">
                 Ahora necesitamos algunos datos para enviarte el perfil de tu proyecto.
             </p>
             <p className="pFormQuoteFinal">¿Dispones de lote?</p>
@@ -156,7 +156,10 @@ export const FinalQuoteForm = () => {
                     placeholder="¿Algo más que quieras decirnos? (opcional)"
                     {...register('description')}
                 />
-                <div className="containerQuoteButton">
+                <div className=" containerFormButtonsHousing ">
+                   <NavLink to="/cotiza_tu_proyecto" className="buttonFormHousing ">
+                        Atrás
+                    </NavLink>
                     <button className="button-primary quoteButton" type="submit">
                         Enviar
                     </button>

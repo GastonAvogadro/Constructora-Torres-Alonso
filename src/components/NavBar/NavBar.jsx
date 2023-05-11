@@ -16,10 +16,21 @@ export const NavBar = () => {
     };
 
     useEffect(() => {
-        if (['/portfolio', '/estudio', '/contacto','/cotiza_tu_proyecto/formulario','/cotiza_tu_proyecto/formulario_vivienda','/cotiza_tu_proyecto/formulario_vivienda_2','/cotiza_tu_proyecto/formulario_vivienda_3', '/confirmacion'].includes(location.pathname)) {
+        if (
+            [
+                '/portfolio',
+                '/estudio',
+                '/contacto',
+                '/cotiza_tu_proyecto/formulario',
+                '/cotiza_tu_proyecto/formulario_vivienda',
+                '/cotiza_tu_proyecto/formulario_vivienda_2',
+                '/cotiza_tu_proyecto/formulario_vivienda_3',
+                '/confirmacion',
+            ].includes(location.pathname)
+        ) {
             setNavBg(true);
         } else {
-            scrollPosition >= 150 ? setNavBg(true) : setNavBg(false);
+            scrollPosition >= 10 ? setNavBg(true) : setNavBg(false);
             window.addEventListener('scroll', handleNavbar);
             return () => {
                 window.removeEventListener('scroll', handleNavbar);

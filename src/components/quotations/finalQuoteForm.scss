@@ -11,17 +11,30 @@
         font-weight: 500;
         font-size: 60px;
         margin-bottom: 2%;
+        @include max-screen(768) {
+            font-size: 45px;
+        }
     }
     .pFormQuoteFinal {
         font-size: 24px;
         font-weight: 400;
         margin-bottom: 2%;
+        @include max-screen(768) {
+            font-size: 22px;
+            margin-bottom: 3%;
+            text-align: center;
+            margin-left: -5%;     
+        }
     }
     .h5FormQuoteFinal {
         font-size: 30px;
         font-weight: 500;
         margin-bottom: 3%;
         color: $color-acento;
+        @include max-screen(768) {
+            font-size: 28px; 
+            margin-top: -7%;                    
+        }
     }
     .containerQuoteButton {
         display: flex;
@@ -40,11 +53,20 @@
         line-height: 30px;
         margin-bottom: 45px;
         margin-top: 1%;
+        @include max-screen(768) {
+            font-size: 17px; 
+            margin-bottom: 12px;          
+        }
     }
     .containerRadioQuoteFinal {
         margin-top: -15px;
         line-height: 50px;
         font-size: 20px;
+        @include max-screen(768) {
+            font-size: 17px;  
+            margin-top: -10px;
+            margin-left: 5%;         
+        }
     }
 
     .formDatosPersonales {
@@ -68,6 +90,8 @@
                     font-size: 16px;
                     @include max-screen(850) {
                         width: 100%;
+                        padding: 6px;
+                        font-size: 14px;
                     }
                 }
                 .errorContactForm {
@@ -86,23 +110,38 @@
     .tituloFormHousing {
         font-weight: 500;
         font-size: 60px;
+        @include max-screen(768) {
+            font-size: 45px;
+            margin-bottom: 3%;
+            margin-top: -5%;                   
+        }
     }
     .h5FormHousing {
         font-size: 28px;
         font-weight: 500;
         margin: 10px 0 4% 3%;
+        @include max-screen(768) {
+            font-size:19px;
+            margin-bottom: 0;  
+                   
+        }
     }
     .h4FormHousing {
         font-size: 40px;
         font-weight: 400;
         margin-bottom: 3%;
         margin-top: 12%;
+        @include max-screen(768) {
+            font-size: 34px;  
+                   
+        }
     }
     .containerFormButtonsHousing {
         display: flex;
         justify-content: space-between;
         margin-right: 9%;
         background-color: #fff;
+        gap: 3%;
     }
     .buttonFormHousing {
         height: 40px;
@@ -122,13 +161,24 @@
     //Form housing 2
     .containerRadioFormHousing {
         display: flex;
-        justify-content: space-around;
+        
+        @include max-screen(900) {
+            flex-direction: column;            
+         }   
     }
     .buttonsRadioFormHousing {
         width: 50%;
+        @include max-screen(900) {
+            width: 100%;
+            
+         }   
     }
     .pFormHousing2 {
         margin-bottom: -1px;
-       font-weight: 700;    
+       font-weight: 700; 
+       @include max-screen(900) {
+        margin-top: 20px;
+        
+     }  
     }
 }

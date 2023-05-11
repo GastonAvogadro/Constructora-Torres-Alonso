@@ -13,7 +13,7 @@ const SocialMedia = ({ color }) => {
             <a href="https://www.facebook.com/TorresAlonsoConstructoraa" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-facebook icon"></i>
             </a>
-            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/torres-alonso-constructora-3b0268273" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-linkedin icon"></i>
             </a>
         </div>

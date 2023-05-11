@@ -1,6 +1,6 @@
 .quotationContainer {
     .quotationHeader {
-        height: 100vh;
+        height: 100vh;       
         .darkBg {
             width: 100%;
             height: 100%;
@@ -61,11 +61,14 @@
     }
     .quotationProjects {
         padding-top: 4%;
-        padding-bottom: 7%;
+        padding-bottom: 7%;        
         h3 {
             margin-left: 7%;
             font-size: 4rem;
             font-weight: 500;
+            @include max-screen(768) {
+                font-size: 3.1rem;                                        
+             } 
         }
         .projectsContainer {
             margin-top: 4%;
@@ -74,13 +77,27 @@
             flex-direction: column;
             justify-content: space-between;
             gap: 4rem;
+            @include max-screen(768) {
+                margin-left: 4%;                                         
+             } 
             .project {
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
                 gap: 3%;
+                @include max-screen(768) {
+                    flex-direction: column-reverse; 
+                    width: 100%;           
+                 }   
                 .button-primary {
                     width: 208px;
+                    @include max-screen(768) {
+                        margin-top: 2%; 
+                        width: 180px; 
+                        height: 40px;
+                        font-weight: 500;
+                        font-size: 1.8rem;          
+                     }
                 }
                 p {
                     letter-spacing: 0.5px;
@@ -88,6 +105,9 @@
                     font-size: 2rem;
                     line-height: 3.2rem;
                     width: 65%;
+                    @include max-screen(768) {
+                        width: 100%;                                  
+                     }
                 }
             }
         }

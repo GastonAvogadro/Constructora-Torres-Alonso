@@ -25,7 +25,7 @@ export const QuoteRemodeling = () => {
                     <textarea
                         rows="11"
                         className="quoteTextarea"
-                        placeholder="Contanos acerca de que tipo de proyecto estas pensando..."
+                        placeholder="Contanos acerca de qué tipo de proyecto estás pensando..."
                         {...register('remodeling', {
                             required: {
                                 value: true,
@@ -37,7 +37,7 @@ export const QuoteRemodeling = () => {
                             },
                             maxLength: {
                                 value: 1000,
-                                message: '* Excedio el límite de caracteres.',
+                                message: '* Excedió el límite de caracteres.',
                             },
                         })}
                     />

@@ -157,7 +157,7 @@ export const HousingForm2 = () => {
                             value="Si me gustaria"
                             className="inputRadio"
                         />
-                        <label>Sí me gustaría</label>
+                        <label>Si me gustaría</label>
                     </div>
                     <div>
                         <input
@@ -350,7 +350,7 @@ export const HousingForm2 = () => {
                         <div className="buttonsRadioFormHousing">
                             <div>
                                 <p className="pFormQuoteFinal pFormHousing2">
-                                    <b className="pSecundary">Me gustaria...</b>
+                                    <b className="pSecundary">Me gustaría...</b>
                                 </p>
                                 <input
                                     type="radio"

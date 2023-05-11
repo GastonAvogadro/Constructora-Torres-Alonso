@@ -18,7 +18,7 @@ export const CotizacionHome = () => {
                 <div>
                     <h2 className='h2CotizacionHome'>Cotizá tu proyecto con nosotros</h2>
                     <div className="conteinerPCotizacion">
-                        <p className='pCotizacionHome'>¿Tenes algún proyecto en mente? Estamos listos para ayudarte a hacer 
+                        <p className='pCotizacionHome'>¿Tenés algún proyecto en mente? Estamos listos para ayudarte a hacer 
                         realidad tu espacio. Contanos tu idea y a la brevedad recibirás una propuesta que mejor se adapte a tus necesidades y presupuesto. 
                         </p>
                     </div>

@@ -68,7 +68,7 @@ export const HousingForm = () => {
                 <textarea
                     rows="6"
                     className="quoteTextarea"
-                    placeholder="¿Tenes otra idea?"
+                    placeholder="¿Tenés otra idea?"
                     {...register('niveles-descripcion')}
                 />
                 <br />
@@ -137,7 +137,7 @@ export const HousingForm = () => {
                     rows="6"
                     {...register('techo-descripcion')}
                     className="quoteTextarea"
-                    placeholder="¿Tenes otra idea?"
+                    placeholder="¿Tenés otra idea?"
                 />
                 <p className="pFormQuoteFinal">
                     <b>Tipos de cielorrazo</b>
@@ -177,7 +177,7 @@ export const HousingForm = () => {
                             value="Durlok"
                             className="inputRadio"
                         />
-                        <label>Durlok</label>
+                        <label>Durlock</label>
                     </div>
                     <div>
                         <input type="radio" {...register('cielo')} value="Yeso" className="inputRadio" />
@@ -188,7 +188,7 @@ export const HousingForm = () => {
                     rows="6"
                     {...register('cielo-descripcion')}
                     className="quoteTextarea"
-                    placeholder="¿Tenes otra idea?"
+                    placeholder="¿Tenés otra idea?"
                 />
                 <p className="pFormQuoteFinal">
                     <b>Tipos de entrepiso</b>
@@ -226,7 +226,7 @@ export const HousingForm = () => {
                     rows="6"
                     {...register('entrepiso-descripcion')}
                     className="quoteTextarea"
-                    placeholder="¿Tenes otra idea?"
+                    placeholder="¿Tenés otra idea?"
                 />
                 <h4 className="h4FormHousing">Antes de avanzar.....</h4>
                 <p className="pFormQuoteFinal">

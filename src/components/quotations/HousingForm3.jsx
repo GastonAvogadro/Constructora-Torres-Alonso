@@ -91,7 +91,7 @@ export const HousingForm3 = () => {
                                     value="Si, es indispensable"
                                     className="inputRadio"
                                 />
-                                <label>Sí, es indispensable</label>
+                                <label>Si, es indispensable</label>
                             </div>
                             <div>
                                 <input
@@ -186,7 +186,7 @@ export const HousingForm3 = () => {
                                     value="Si, es indispensable"
                                     className="inputRadio"
                                 />
-                                <label>Sí, es indispensable</label>
+                                <label>Si, es indispensable</label>
                             </div>
                             <div>
                                 <input
@@ -419,7 +419,7 @@ export const HousingForm3 = () => {
                         <div className="buttonsRadioFormHousing">
                             <div>
                                 <p className="pFormQuoteFinal pFormHousing2">
-                                    <b className="pSecundary">Me gustaria...</b>
+                                    <b className="pSecundary">Me gustaría...</b>
                                 </p>
                                 <input
                                     type="radio"

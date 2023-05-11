@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom'
 export const PorfolioHome = () => {
   return (
     <>
-    <h2 className='h2PorfolioHome'>Porfolio...</h2>
+    <h2 className='h2PorfolioHome'>Portfolio...</h2>
     <p className='pPorfolioHome'>Diseñamos experiencias</p>
 
       <div className='porfolioHomeContainer'>
